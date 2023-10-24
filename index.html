@@ -2,8 +2,12 @@
 <html>
 
 <head>
-	<title>My Favourite Site</title>
-	<style> 
+	<meta charset="UTF-8">
+	<meta name="Описалово" content="Море">
+	<meta name="author" content="John Snow">
+	<meta name="keywords" content="Сделаем-ка море">
+	<title>Морюшко</title>
+	<style>
 		body {
 			background-image: url("./static/SeaSunset.jpg");
 			background-repeat: no-repeat;
@@ -11,15 +15,84 @@
 		}
 
 		h1 {color: red; font-size: 50px; text-align: center;}
+		h2 {color: yellow; text-align: center;}
 		p {color: red; font-size: 20px;text-align: center;}
+		pre{color: yellow;font-size: 18px;}
+		small{color:green}
+		code{color:grey}
+		ul{color:red}
+		ol{color:green}
+		label{color: red}
+		details{color:yellow}
+
+
 	</style>
 </head>
 
-<body>
-<h1> The Sea</h1>
+<BODY>
+<header>
+Шапочка	моря
+</header>
 
-<p>Remember,remember the six of november, gunpowder treason and plot, we have no reason, why gunpoweder treason should ever be forgot!</p>
- <!-- <img src="./static/SeaSunset.jpg" width="1024 height="768"> -->
+<article>
+	<h1 title="Морюшко">  Море </h1>
 
-</body>
+	<p>Remember,remember the six of november, gunpowder treason and plot, we have no reason, why gunpowder treason should ever be forgot!</p>
+	<pre><b> Текст с форматированием в строке(толстенький!)</b></pre>
+	<pre><i> Текст (c курсивчиком!)</i></pre>
+	<pre><small>  Текст поменьше...</small>
+	<big> Текст побольше...</big></pre>
+	<!-- <img src="./static/SeaSunset.jpg" width="1024 height="768"> -->
+	<h2> Заголовок 2 </h2>
+	<center><a href = "http://google.com"  target="_blank" title="Буржуйский поисковик"> Поисковик </a> </center>
+	<hr>
+	Перенос<br>строки<br>
+	<abbr title="HTML is ...">HTML</abbr>
+	<hr>
+	<code> &lt; ?php echo "Hello world!" ?&gt;</code>
+	<ul>
+		<li>О <sup>гонь</sup></li>
+		<li>В<sub>од</sub>А</li>
+		<li>Земля</li>
+		<li>Воздух</li>
+	</ul>
+
+
+	<ol start="5">
+		<li>Огонь</li>
+		<li>Вода</li>
+		<li>Земля</li>
+		<li>Воздух</li>
+	</ol>
+	<img src="./static/tree.jpg" width="200px" height="200px" alt="" title="">
+	<img src="./static/sunset.jpg" width="200px" height="200px" alt="" title="">
+	<img src="./static/surfer.jpg" width="200px" height="200px" alt="" title="">
+	<img src="./static/sunflower.jpg" width="200px" height="200px" alt="" title="">
+	<form action="" method="get">
+		<label for="Chooser">Выбери картинку:</label>
+		<input type="text" name="Chooser" id="Chooser">
+		<label for="Password">Паролька:</label>
+		<input type="password" name="Password" id="Password">
+		<hr>
+		<br>
+		 <textarea rows="10" cols="60"></textarea>
+		<br>
+		<hr>
+
+		<select>
+			<option>option 1</option>
+			<option>option 2</option>
+			<option>option 2</option>
+		</select>
+		<input type="color"> <br>
+		<input type="submit" value="Send">
+	</form>
+	<button>Подписаться</button>
+	<details>Somebody hides this!</details>
+</article>
+<footer>
+	А тут подвал какой-то
+</footer>
+
+</BODY>
 </html>

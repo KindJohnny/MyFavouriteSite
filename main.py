@@ -96,13 +96,14 @@ def get_save_path():
 
 @app.route("/static/<filepath>", name='static_file')
 def static(filepath):
-    if "sun" in filepath:
-        return static_file("SeaSunset.jpg", root="./static/")
-    else:
-        return static_file(filepath, root="./static/")
+    # if "sun" in filepath:
+    #     return static_file("SeaSunset.jpg", root="./static/")
+    # else:
+    return static_file(filepath, root="./static/")
 
-    # < img src = "/home/fedor/bottle/static/SeaSunset.jpg" alt = "" >
-    # return static_file(filename, root='/home/fedor/bottle/static', mimetype='image/jpeg')
+
+# < img src = "/home/fedor/bottle/static/SeaSunset.jpg" alt = "" >
+# return static_file(filename, root='/home/fedor/bottle/static', mimetype='image/jpeg')
 
 
 # import mimetypes
