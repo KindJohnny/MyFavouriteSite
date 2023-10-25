@@ -44,17 +44,20 @@
 	<big> Текст побольше...</big></pre>
 	<!-- <img src="./static/SeaSunset.jpg" width="1024 height="768"> -->
 	<h2> Заголовок 2 </h2>
-	<center><a href = "http://google.com"  target="_blank" title="Буржуйский поисковик"> Поисковик </a> </center>
+	<nav>
+		<center><a href = "http://google.com"  target="_blank" title="Буржуйский поисковик"> Поисковик </a> </center>
+		<center><a href="sea">Солнце тут!</a></center>
+	</nav>
 	<hr>
 	Перенос<br>строки<br>
 	<abbr title="HTML is ...">HTML</abbr>
 	<hr>
 	<code> &lt; ?php echo "Hello world!" ?&gt;</code>
 	<ul>
-		<li>О <sup>гонь</sup></li>
-		<li>В<sub>од</sub>А</li>
-		<li>Земля</li>
-		<li>Воздух</li>
+		<li>Огонь(CO<sup>2</sup>)</li>
+		<li>Вода (H<sub>2</sub>O)</li>
+		<li>Земля(SiO<sub>2</sub>)</li>
+		<li>Воздух(O<sub>2</sub>)</li>
 	</ul>
 
 
@@ -64,10 +67,30 @@
 		<li>Земля</li>
 		<li>Воздух</li>
 	</ol>
-	<img src="./static/tree.jpg" width="200px" height="200px" alt="" title="">
-	<img src="./static/sunset.jpg" width="200px" height="200px" alt="" title="">
-	<img src="./static/surfer.jpg" width="200px" height="200px" alt="" title="">
-	<img src="./static/sunflower.jpg" width="200px" height="200px" alt="" title="">
+	<figure>
+			<a href="Road"> <img src="./static/Road.jpg" width="200px" height="200px" alt=""> </a>
+			<p>The Best road in the world!</p>
+	</figure>
+		<hr>
+		<figure>
+		<!--	<img src="./static/tree.jpg" width="200px" height="200px" alt="Древо" title="">-->
+			<a  href="Sea"><img src="./static/SeaSunset.jpg" width="200px" height="200px" alt="Закат" title=""></a>
+			<p>The Sea & Sun!</p>
+		</figure>
+		<hr>
+
+		<figure>
+			<a  href="Acrylic"> <img src="./static/Acrylic.jpg" width="200px" height="200px" alt="Acr" title="">  </a>
+			<p>Something Acrylic!</p>
+		</figure>
+		<hr>
+		<figure>
+			<a  href="Wood"> <img src="./static/Wood.jpg" width="200px" height="200px" alt="Wood" title="">  </a>
+			<p>Wood!</p>
+		</figure>
+		<hr>
+<!--	<img src="./static/sunflower.jpg" width="200px" height="200px" alt="Подсолнух" title="">-->
+
 	<form action="" method="get">
 		<label for="Chooser">Выбери картинку:</label>
 		<input type="text" name="Chooser" id="Chooser">

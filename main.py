@@ -15,6 +15,25 @@ def html_index():
     return template("index", url=url)
 
 
+@app.route("/Sea")
+def html_sea():
+    return template("sea", url=url)
+
+
+@app.route("/Road")
+def html_road():
+    return template("road", url=url)
+
+
+@app.route("/Acrylic")
+def html_acr():
+    return template("acrylic", url=url)
+
+@app.route("/Wood")
+def html_wood():
+    return template("wood", url=url)
+
+
 @app.route('/hello/<name>')
 def greet(name='Stranger'):
     return template('<b>Hello {{name}}</b>! How are you?', name=name)
