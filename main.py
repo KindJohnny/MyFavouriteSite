@@ -1,5 +1,5 @@
 # This is a sample Python script.
-import bottle
+
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from bottle import route, get, post, request, run, template, Bottle, url
@@ -13,6 +13,11 @@ app = Bottle()
 @app.route("/")
 def html_index():
     return template("index", url=url)
+
+
+@app.route("/hello")
+def html_index():
+    return template("helloworld", url=url)
 
 
 @app.route("/Sea")

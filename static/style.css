@@ -1,0 +1,26 @@
+a{
+color: red;
+font-size: 30px;
+}
+
+div{
+color: rgba(255,0,0,0.4);
+}
+
+#link{
+color : lime;
+}
+
+#testlink
+{
+font-size:20px;
+color:purple;
+}
+
+.human{
+color:#4c8bf5
+}
+
+.animal{
+color:#ffce45
+}
