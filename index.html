@@ -21,10 +21,32 @@
 		small{color:green}
 		code{color:grey}
 		ul{color:red}
-		ol{color:green}
+		ol{color:yellow}
 		label{color: red}
 		details{color:yellow}
+		dt{color:red}
+		div{color:white}
+		legend{color:white}
 
+		.main {
+			display:flex;
+			align-items: center
+		}
+
+		.input_div{
+			margin:0px 0px 0px 100px;
+		}
+		.input_div2{
+			margin:0px 0px 0px 40px;
+		}
+
+		.input_div3{
+			margin:0px 0px 0px 85px;
+		}
+
+		.input_div4{
+			margin:0px 0px 0px 70px;
+		}
 
 	</style>
 </head>
@@ -44,29 +66,84 @@
 	<big> Текст побольше...</big></pre>
 	<!-- <img src="./static/SeaSunset.jpg" width="1024 height="768"> -->
 	<h2> Заголовок 2 </h2>
-	<nav>
-		<center><a href = "http://google.com"  target="_blank" title="Буржуйский поисковик"> Поисковик </a> </center>
-		<center><a href="sea">Солнце тут!</a></center>
-	</nav>
+<!--	<nav>-->
+<!--		<center><a href = "http://google.com"  target="_blank" title="Буржуйский поисковик"> Поисковик </a> </center>-->
+<!--		<center><a href="sea">Солнце тут!</a></center>-->
+<!--	</nav>-->
 	<hr>
 	Перенос<br>строки<br>
 	<abbr title="HTML is ...">HTML</abbr>
 	<hr>
 	<code> &lt; ?php echo "Hello world!" ?&gt;</code>
-	<ul>
-		<li>Огонь(CO<sup>2</sup>)</li>
-		<li>Вода (H<sub>2</sub>O)</li>
-		<li>Земля(SiO<sub>2</sub>)</li>
-		<li>Воздух(O<sub>2</sub>)</li>
-	</ul>
-
-
-	<ol start="5">
-		<li>Огонь</li>
-		<li>Вода</li>
-		<li>Земля</li>
-		<li>Воздух</li>
+	<ol>
+		<li>Огонь
+			<ul>
+				<li>(CO<sup>2</sup>)</li>
+			</ul>
+		</li>
+		<li>Вода
+			<ul>
+				<li>(H<sub>2</sub>O)</li>
+			</ul>
+		</li>
+		<li>Земля
+			<ul>
+				<li>(SiO<sub>2</sub>)</li>
+			</ul>
+		</li>
+		<li>Воздух
+			<ul>
+				<li>(O<sub>2</sub>)</li>
+			</ul>
+		</li>
 	</ol>
+
+	<table border="1">
+		<caption>Меню</caption>
+		<thead>
+		<tr>
+			<th>Id</th>
+			<th>Price</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Tea</td>
+			<td>50P</td>
+		</tr>
+		<tr>
+			<td>Coffee</td>
+			<td>100P</td>
+		</tr>
+
+		<tr>
+			<td>Milk</td>
+			<td>100P</td>
+		</tr>
+
+		</tbody>
+		<tfoot>
+		<tr>
+			<td colspan="2">Всего: 3</td>
+
+		</tr>
+		</tfoot>
+	</table>
+
+<!--	<ol start="5">-->
+<!--		<li>Огонь</li>-->
+<!--		<li>Вода</li>-->
+<!--		<li>Земля</li>-->
+<!--		<li>Воздух</li>-->
+<!--	</ol>-->
+	<dl>
+		<dt>Первый</dt>
+		<dd>Lorem ipsum</dd>
+		<dt>Второй</dt>
+		<dd>do ri me</dd>
+		<dt>Третий</dt>
+		<dd>la ti re</dd>
+	</dl>
 	<figure>
 			<a href="Road"> <img src="./static/Road.jpg" width="200px" height="200px" alt=""> </a>
 			<p>The Best road in the world!</p>
@@ -80,7 +157,9 @@
 		<hr>
 
 		<figure>
+			<figcaption>
 			<a  href="Acrylic"> <img src="./static/Acrylic.jpg" width="200px" height="200px" alt="Acr" title="">  </a>
+			</figcaption>
 			<p>Something Acrylic!</p>
 		</figure>
 		<hr>
@@ -90,26 +169,96 @@
 		</figure>
 		<hr>
 <!--	<img src="./static/sunflower.jpg" width="200px" height="200px" alt="Подсолнух" title="">-->
+<p>Форма</p>
+	<form action="/form1">
+		<fieldset>
+		<legend>User Input</legend>
 
-	<form action="" method="get">
-		<label for="Chooser">Выбери картинку:</label>
-		<input type="text" name="Chooser" id="Chooser">
-		<label for="Password">Паролька:</label>
-		<input type="password" name="Password" id="Password">
-		<hr>
-		<br>
-		 <textarea rows="10" cols="60"></textarea>
-		<br>
-		<hr>
+		<div class="main">
+			<div class="text_div">
+				<label>Id:</label>
+			</div>
+			<div class="input_div">
+				<input  type="text" name="Id" placeholder="Type your name" required>
+			</div>
+		</div>
 
-		<select>
-			<option>option 1</option>
-			<option>option 2</option>
-			<option>option 2</option>
-		</select>
-		<input type="color"> <br>
-		<input type="submit" value="Send">
+		<div class="main">
+		<div class="text_div">
+			<label>Password:</label>
+		</div>
+			<div class="input_div2">
+			<input type="password" name="passwd">
+			</div>
+		</div>
+
+		<div class="main">
+		<div class="text_div">
+			<label>Age:</label>
+		</div>
+			<div class="input_div3">
+			<input type="number" name="age" value="33" min="18" max="65" step="2">
+			</div>
+		</div>
+
+		<div class="main">
+		<div class="text_div">
+			<label>Email:</label>
+		</div>
+			<div class="input_div4">
+			<input type="email"  name="email" minlength="6" maxlength="39">
+			</div>
+		</div>
+
+		<div>
+		<label>Agreed:</label>
+		<input type="checkbox" name="cb" checked>
+		</div>
+
+		<div>
+		Gender:
+			<label> Male  <input type="radio" id="1" name="gender1" checked ></label>
+			<label>Female <input type="radio" id="2" name="gender1"></label>
+		</div>
+
+		<div>
+			<select name="plan" >
+				<option disabled value="plan1">1</option>
+				<option selected value="plan2">2</option>
+				<option value="plan3">3</option>
+			</select>
+		</div>
+		<input type="button" value="Кнопка">
+		<input type="submit" value="Отправить">
+		<input type="reset" value="Сброс">
+		<input type="file">
+
+		<button type="button">
+			<b>Текст</b>
+		</button>
+		</fieldset>
 	</form>
+	<hr>
+
+<!--	<form action="" method="get">-->
+<!--		<label for="Chooser">Выбери картинку:</label>-->
+<!--		<input type="text" name="Chooser" id="Chooser">-->
+<!--		<label for="Password">Паролька:</label>-->
+<!--		<input type="password" name="Password" id="Password">-->
+<!--		<hr>-->
+<!--		<br>-->
+<!--		 <textarea rows="10" cols="60"></textarea>-->
+<!--		<br>-->
+<!--		<hr>-->
+
+<!--		<select>-->
+<!--			<option>option 1</option>-->
+<!--			<option>option 2</option>-->
+<!--			<option>option 2</option>-->
+<!--		</select>-->
+<!--		<input type="color"> <br>-->
+<!--		<input type="submit" value="Send">-->
+<!--	</form>-->
 	<button>Подписаться</button>
 	<details>Somebody hides this!</details>
 </article>

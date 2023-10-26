@@ -20,6 +20,20 @@ def html_sea():
     return template("sea", url=url)
 
 
+@app.route("/form1")
+def form1_handler():
+    _id = request.params.dict['Id'][0]
+    passwd = request.params.dict['passwd'][0]
+    if passwd == "":
+        passwd = "*no_passwd*"
+    age = request.params.dict['age'][0]
+    email = request.params.dict['email'][0]
+
+    agreed = request.params.dict['cb']
+
+    return f"Hello friend:{_id},\t{passwd},\t{age},\t{email}"
+
+
 @app.route("/Road")
 def html_road():
     return template("road", url=url)
@@ -28,6 +42,7 @@ def html_road():
 @app.route("/Acrylic")
 def html_acr():
     return template("acrylic", url=url)
+
 
 @app.route("/Wood")
 def html_wood():
