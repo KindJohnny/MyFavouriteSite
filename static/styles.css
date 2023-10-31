@@ -68,6 +68,26 @@ color:black;
 border:10px solid #323232
 }
 
+#center
+{
+width:20%;
+margin-left: auto;
+margin-right: auto;
+/*position: relative;*/
+/*display:flex;
+justify-content:center;*/
+
+/*margin:10px 0px 0px  500px;*/
+text-align: center;
+color: yellow;
+font-size:32px;
+border: 2px solid orange;
+border-radius:100px;
+opacity: 0.8;
+}
+
+
+
 body
 {
 background-image: url("Sun.jpg");
@@ -75,13 +95,13 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-#test
+#skills
 {
 background-color:yellow;
 color:orange;
 padding:10px;
-margin:15px;
-border: 7px solid red;
+margin:25px;
+border: 5px solid red;
 font-size: 24px;
 font-weight:800;
 border-radius: 100px;
@@ -95,7 +115,7 @@ transform: rotate(0deg) scale(1.2);
 transition: 2.0s all
 }
 
-#test:hover
+#skills:hover
 {
 transform: rotate(360deg) scale(0.5);
 opacity:0.7;
