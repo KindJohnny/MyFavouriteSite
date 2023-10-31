@@ -10,12 +10,12 @@ from bottle import static_file
 app = Bottle()
 
 
+# @app.route("/")
+# def html_index():
+#     return template("index", url=url)
+
+
 @app.route("/")
-def html_index():
-    return template("index", url=url)
-
-
-@app.route("/hello")
 def html_index():
     return template("helloworld", url=url)
 
