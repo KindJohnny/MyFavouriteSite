@@ -97,29 +97,72 @@ background-repeat: no-repeat;
 
 #skills
 {
-background-color:yellow;
-color:orange;
-padding:10px;
-margin:25px;
-border: 5px solid red;
+
 font-size: 28px;
 font-weight:800;
-border-radius: 100px;
 opacity: 0.4; /* прозрачность*/
-box-shadow: 13px 13px 27px orange;/*настройки тени, вправо, вниз, размытие */
 width: 150px;
 /*height: 500px;*/
 text-align: center;
 /*display: none/block;*/
-transform: rotate(0deg) scale(1.2);
-transition: 2.0s all
+/*padding:10px;*/
+margin:40px;
 }
+
+#left
+{
+border-radius: 100px;
+background-color:yellow;
+color:orange;
+border: 5px solid red;
+box-shadow: 13px 13px 27px orange;/*настройки тени, вправо, вниз, размытие */
+transform: rotate(0deg) scale(1.2);
+transition: 2.0s all;
+}
+
+#left:hover
+{
+transform: rotate(-3600deg) scale(1.5);
+}
+
+#centerize
+{
+border-radius: 100px;
+background-color:yellow;
+color:orange;
+border: 5px solid red;
+box-shadow: 13px 13px 27px orange;/*настройки тени, вправо, вниз, размытие */
+transform: rotate(0deg) scale(1.2);
+transition: 0.5s all;
+}
+
+#centerize:hover
+{
+transform: scale(3.0);
+}
+
+#right
+{
+border-radius: 100px;
+background-color:yellow;
+color:orange;
+border: 5px solid red;
+box-shadow: 13px 13px 27px orange;/*настройки тени, вправо, вниз, размытие */
+transform: rotate(0deg) scale(1.2);
+transition: 2.0s all;
+}
+
+#right:hover
+{
+    transform: rotate(3600deg) scale(1.2);
+}
+
 
 #skills:hover
 {
-transform: rotate(360deg) scale(0.5);
+/*transform: rotate(-360deg) scale(0.5);
 opacity:0.9;
-background-color: red;
+background-color: red;*/
 }
 
 table
